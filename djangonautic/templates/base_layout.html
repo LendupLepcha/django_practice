@@ -7,8 +7,10 @@
     </head>
     <body>
         <div class = "wrapper">
-            <h1><a href="{% url 'home' %}">articles</a></h1>
-            <nav>
+            <header>
+                
+                <a href="{% url 'home' %}">Home</a>
+                <nav>
                 <ul>
                     {% if user.is_authenticated %}
                     <li>
@@ -25,9 +27,13 @@
                     
                     {% endif %}
                 </ul>
-            </nav>
+                </nav>
+            
+            </header>
+              
             {% block content %}
             {% endblock %}
+            
         </div>
     </body>
 </html>

@@ -1,3 +1,26 @@
 body{
-    background: blue;
+    background-color: #0f121f;
+    background-image: url(/static/sky.png);
+    background-repeat: no-repeat;
+    color: #FFF;
+
+}
+
+body *{
+    font-family: Ubuntu;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+    margin: 0;
+}
+
+a, a:hover, a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
 }
